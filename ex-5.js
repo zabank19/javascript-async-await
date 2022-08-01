@@ -4,8 +4,8 @@ let getEmployee = () => {
 };
 
 function asynchronousFunction() {
-  let employee;
   // Start coding here
+  let employee;
 }
 
 asynchronousFunction();
