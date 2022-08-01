@@ -11,10 +11,10 @@ let getItems = (orders) => {
 };
 
 function asynchronousFunction() {
+  // Start coding here
   let user;
   let orders;
   let items;
-  // Start coding here
 }
 
 asynchronousFunction();
