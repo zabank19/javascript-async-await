@@ -3,8 +3,8 @@ let getUser = () => {
 };
 
 function asynchronousFunction() {
-  let user;
   // Start coding here
+  let user;
 }
 
 asynchronousFunction();
