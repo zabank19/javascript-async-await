@@ -1,18 +1,36 @@
-let getUser = () => {
-  return new Promise(function (resolve, reject) {
-    setTimeout(() => resolve("user data"), 2000);
+let getUser = (user) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (user === "James") {
+        resolve("user data");
+      } else {
+        reject("no users");
+      }
+    }, 1000);
   });
 };
 
-let getOrders = (user) => {
-  return new Promise(function (resolve, reject) {
-    setTimeout(() => resolve("orders"), 1000);
+let getOrders = (userData) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (userData === "user data") {
+        resolve("orders");
+      } else {
+        reject("no orders");
+      }
+    }, 1000);
   });
 };
 
 let getItems = (orders) => {
-  return new Promise(function (resolve, reject) {
-    setTimeout(() => resolve("orders items"), 1000);
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (orders === "orders") {
+        resolve("orders items");
+      } else {
+        reject("out of items");
+      }
+    }, 1000);
   });
 };
 
