@@ -1,11 +1,8 @@
-let getEmployee = () => {
-  throw new Error("👿 Failed to request data from server"); // บรรทัดนี้เป็นการสมมุติว่ามี Error เกิดขึ้นใน getEmployee
-  return "Employee data from server";
+let getJohnProfile = () => {
+  return new Promise(function (_, reject) {
+    setTimeout(() => reject({
+      errorCode: 500,
+      message: "👿 Failed to request data from server",
+		}), 2000);
+  });
 };
-
-function asynchronousFunction() {
-  // Start coding here
-  let employee;
-}
-
-asynchronousFunction();

@@ -1,20 +1,23 @@
-let getUser = () => {
-  return "user data";
+let getJohnProfile = () => {
+  return new Promise(function (resolve) {
+    setTimeout(() => resolve({
+      name: "John",
+      age: 20,
+      hobbies: ["Coding", "Football"]
+		}), 1000);
+  });
 };
 
-let getOrders = (user) => {
-  return "orders";
+let getJohnOrders = () => {
+  return new Promise(function (resolve) {
+    setTimeout(() => resolve([{
+      orderId: "001",
+      items: ["apple", "banana"]
+		},{
+      orderId: "002",
+      items: ["orange", "itim"]
+		}]), 1500);
+  });
 };
 
-let getItems = (orders) => {
-  return "orders items";
-};
-
-function asynchronousFunction() {
-  // Start coding here
-  let user;
-  let orders;
-  let items;
-}
-
-asynchronousFunction();
+// Start coding here
