@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import { jest } from "@jest/globals";
 
-describe("exercise 1: Conditional Logic tests cases", () => {
+describe("exercise 4: Conditional Logic tests cases", () => {
     beforeAll(() => {
         jest.spyOn(console, "log");
     });
@@ -10,7 +10,7 @@ describe("exercise 1: Conditional Logic tests cases", () => {
     });
 
     test("เมื่อ console.log แล้วต้องแสดงผลตามที่โจทย์กำหนด", async () => {
-        const data = await fs.readFile("./ex-1.js");
+        const data = await fs.readFile("./ex-4.js");
         const code = `${data}`;
 
         const func = new Function(code);
