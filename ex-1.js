@@ -1,3 +1,5 @@
+//Exercise #1
+
 let getJohnProfile = () => {
   return new Promise(function (resolve) {
     setTimeout(
@@ -11,17 +13,4 @@ let getJohnProfile = () => {
     );
   });
 };
-
-let johnProfile = "Test";
-const displayJohnProfile = (data) => {
-  johnProfile = data
-  console.log(johnProfile)
-};
-
-const displayJohnError = (error) => {
-  console.log(error);
-};
-
-getJohnProfile().then(displayJohnProfile).catch(displayJohnError);
-
-
+// Start coding here
