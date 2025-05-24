@@ -33,3 +33,14 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+// เรียก getJohnProfile ก่อน
+getJohnProfile()
+  .then((profile) => {
+    console.log(profile); // แสดงข้อมูลของ John
+
+    // จากนั้นเรียก getJohnOrders
+    return getJohnOrders();
+  })
+  .then((orders) => {
+    console.log(orders); // แสดงข้อมูล order
+  });
